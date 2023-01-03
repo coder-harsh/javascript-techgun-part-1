@@ -84,9 +84,60 @@ let str = "This is js tutorial. it is a good tutorial.";
 // let pos = str.indexOf('is'); 2 as first is in "This"
 let pos = str.indexOf('is', 10); //24 i.e search is after 10 char.
 document.write(pos);
-*/
 
-//pichhe se char search karo ab
+
+//left se hi last char search karo ab
 let str = "This is js a js tutorial. it is a good tutorial.";
 let pos = str.lastIndexOf('js');
 document.write(pos); //13 pe left se hi last wala js aayega
+
+
+//pure string se aage pichhe dono se space hatana rahega toh
+let str = " This is Js tutorial. this is a good tutorial. ";
+let trmstr = str.trim();
+console.log(trmstr);//string without space aage ya pichhe
+console.log(str);//string with space
+
+
+//sirf aage se space hatana ho toh
+let str = " This is js tutorial ";
+let trmstr = str.trimStart();
+console.log(trmstr); //sirf start se space hat jayega
+console.log(str);
+
+
+//pichhe se space remove karna rahega toh
+let str = " This is js tutorial ";
+let trmstr = str.trimEnd();
+console.log(trmstr); //sirf last se space hat jayega
+console.log(str);
+
+
+//string ko capital mein covert karna chahte hain
+let str = "This is js tutorial. this is a good tutorial.";
+let chr = str.toUpperCase();
+document.write(chr); //str in capital
+
+
+//string ko lowercase mein covert karna chahte hain
+let str = "This is js tutorial. this is a good tutorial.";
+let chr = str.toLowerCase();
+document.write(chr); //str in lowercase
+
+
+
+//replace char in string
+let str = "This is js tutorial. this is a good tutorial.";
+let chr = str.replace('good', 'very bad'); //replace good with very bad. agar str mein good nhi milega to str hi chr mein chla jayega.
+document.write(chr);
+
+
+//includes: agar koi char string mein hoga to true nhi to false return karo. but in indexof: it tells the index of char. agr nhi h char in string to return -1.
+let str = "This is a js tutorial. This is a good tutorial.";
+let chr = str.includes('html');
+document.write(chr); //false as html is not in str
+
+chr = str.includes('This');
+document.write(chr); //true as This is present in str
+//includes function ko if else mein use karo
+*/
