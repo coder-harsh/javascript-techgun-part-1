@@ -62,9 +62,9 @@ document.write(str2); //Javascript
 */
 
 //kisi v string ka position janana chahte hain
-
+/*
 let str = "I love js becuse it is Good";
-let pos = str.indexOf("Good"); //23 if the string inside (" ") will not be in str variable then it will rreturn -1
+let pos = str.indexOf("Good"); //23 if the string inside (" ") will not be in str variable then it will rreturn -1. -1 ke alawe kuchh v return karega to char string mein h.
 document.write(pos);
 
 
@@ -73,5 +73,20 @@ let nam2 = nam.indexOf("Hey");
 document.write(nam2); //0 as first Hey is at 0. also it will fetch "is in This".
 
 //if we want to know position of other Hey rather than first Hey then we have to pass another parameter
+
 nam2 = nam.indexOf("Hey", 10); //hey after 10th character. agar 1st string find karna hai then no need of parameter
 document.write(nam2);  //29
+*/
+
+
+/*
+let str = "This is js tutorial. it is a good tutorial.";
+// let pos = str.indexOf('is'); 2 as first is in "This"
+let pos = str.indexOf('is', 10); //24 i.e search is after 10 char.
+document.write(pos);
+*/
+
+//pichhe se char search karo ab
+let str = "This is js a js tutorial. it is a good tutorial.";
+let pos = str.lastIndexOf('js');
+document.write(pos); //13 pe left se hi last wala js aayega
