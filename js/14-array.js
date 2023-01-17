@@ -24,7 +24,14 @@ document.write(num); //1,2,3
 */
 
 
-//update an array
+//update an 
+/*
 let num = [1, 2, 3];
 num[1] = 33;
 document.write(num); //2 ke jagah 33 aa jayega
+*/
+
+let sub = ["Hindi", "English", "Math"];
+alert(sub);
+sub[1] = "GS";
+alert(sub);
