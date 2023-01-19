@@ -74,6 +74,9 @@ document.write(firstname[2]); //r bcs r is at 2 in Harsh
 
 // Check variable is Array or not
 let book = ["Harsh", "Harish", "Hema"];
+console.log(Array.isArray(book)); //true
+let name = "Harsh";
+console.log(Array.isArray(name)); //false
 
 
 
