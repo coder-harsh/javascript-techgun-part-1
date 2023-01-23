@@ -19,9 +19,42 @@ function add() {
 add(5, 7, 8);
 add(6, 7, 8, 9); //4
 
-*/
+
 function add() {
     console.log(arguments); //[7,6,8];
     console.log(arguments[1]); //6 //indivisual array element ko access karna
+    console.log(arguments[5]); //undefined as there is no element at 5th position
 }
 add(7, 6, 8);
+
+function add() {
+    if (arguments.length == 0) {
+        alert("no arguments passed");
+    }
+    else {
+        let sum = 0;
+        for (let i = 0; i < arguments.length; i++) {
+            sum = sum + arguments[i];
+        }
+        document.write(sum);
+    }
+}
+add(5, 7, 9); //21
+add(5, 8); //13
+*/
+
+//function ko ek variable mein store karne wale h.aur variable k name se function call karne wale h.
+function add() {
+    if (arguments.length == 0) {
+        alert("no arguments passed");
+    }
+    else {
+        let sum = 0;
+        for (let i = 0; i < arguments.length; i++) {
+            sum = sum + arguments[i];
+        }
+        document.write(sum);
+    }
+}
+let addition = add;
+addition(5, 8); //13
