@@ -56,5 +56,5 @@ function add() {
         document.write(sum);
     }
 }
-let addition = add;
+let addition = add; //yaha add() mein () nhi denge
 addition(5, 8); //13

@@ -1,1 +1,2 @@
-variable print ${age} is not working in js/11-alert-prompt-confirm.js is not working.
+variable print ${age} is not working in js/11-alert-prompt-confirm.js is not working as we have to use `` rather than ''.
+``: esc k niche ka keyword
