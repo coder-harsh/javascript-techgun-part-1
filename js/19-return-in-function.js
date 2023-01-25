@@ -46,8 +46,8 @@ function add(a, b) {
 }
 let c = add(k, e); //k is not defined
 let c = add(a,b); //a is not defined outside add function
-document.write(c); 
-*/
+document.write(c);
+
 
 //hum function se ek array bhi return kar sakte hain
 function add(a, b) {
@@ -56,6 +56,34 @@ function add(a, b) {
 }
 let c = add(2, 5);
 document.write(c); //2,3,4
-//agar multiple value return karna h to usko array mein store karo aur array return kar do
 
-//hum multiple thing return nhi kar sakte bcs function mein return ke niche ka code execute nhi hoga.
+//agar multiple value return karna h to usko array mein store karo aur array return kar do
+//hum multiple thing return nhi kar sakte bcs function mein return ke niche ka function code execute nhi hoga.
+//hum multiple return likhenge to error nhi dega bus 1st return milne ke bad  function code execute hona band ho jyega.
+
+function add(a, b) {
+    let d = 0;
+    return d;
+    let p = 6;
+    return p;
+}
+let c = add(2, 5);
+document.write(c); //0
+
+//when we need to return multiple value
+//compre 2 num
+
+function add(a, b) {
+    if (a > b) {
+        return 1;
+    }
+    else if (b > a) {
+        return -1;
+    }
+    else {
+        return 0;
+    }
+}
+let c = add(2, 4); //-1
+document.write(c);
+*/
