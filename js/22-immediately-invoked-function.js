@@ -1,0 +1,1 @@
+//immediately invoked function: the function which is declared and call together.
