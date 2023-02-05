@@ -10,7 +10,7 @@ document.write(x); //hamre browser/computer kka dte store hoga //Fri Feb 03 2023
 //mujhe ab cureent date nhi chajhiye
 let x = new Date(2001, 07, 02, 15, 33, 56, 7); //js m jan 0 m store hota h aur dec 11 m   | 14: feb   //year, month,date,hour, min,sec,milisecnd  //, m eneter kiye but print hoga formated //ab hume isi m parameter send karte hn. isme mxm 7 parameter ja sakta h
 document.write(x);
-*/
+
 
 //hum chahe to parameter kam v likh sakte hn
 let x = new Date(2001, 07, 02, 15, 33, 56); //Thu Aug 02 2001 15:33:56 GMT+0530 (India Standard Time)
@@ -24,3 +24,77 @@ document.write(x);
 
 //2 parameter minm dena mmandatory h: date & month
 //koi parameter nhi denge to current date time dega
+
+
+//abhi hum parameter as a argument pass karte the
+//ab hum as a string apne format m value de skate hn
+
+let x = new Date("October 13, 2018 11:12:33"); //Sat Oct 13 2018 11:12:33 GMT+0530 (India Standard Time)
+//pre defined bahut sare format h jisko as  string pas karenge to work karge
+//kisi v predefined format m value dalenge to wo js ek hi format m likhega isse date time compare karna bahut aasan ho jayega
+document.write(x);
+
+//aisa man liya gaya h ki jan 1 1970 se hi computer date start hua h. time mili second m store hota h
+
+
+
+//now date object method
+
+//milisecond ko dekhne k tarika dhundte hn
+let x = new Date("October 13, 2018 11:12:33"); //is date time ko milisecond m print karega  jan 1 1970 se
+document.write(x.getTime());  //time in millisecond 1539409353000
+
+
+//if we need only year
+let x = new Date("October 13, 2018 11:12:33");
+document.write(x.getTime());//1539409353000: is date time ko milisecond m print karega  jan 1 1970 se
+
+document.write(x.getTimezoneOffset()); //-330: Gets the difference in minutes between the time on the local computer and Universal Coordinated Time (UTC).
+document.write("<br>")
+document.write(x.getFullYear()); //only year 2018
+document.write("<br>")
+document.write(x.getMonth()); //only month 9: because jan is zero
+document.write("<br>")
+document.write(x.getDate()); //only date 13
+document.write("<br>")
+document.write(x.getHours()); //only hour 11
+document.write("<br>")
+document.write(x.getMinutes()); //only minitue 12
+document.write("<br>")
+document.write(x.getSeconds()); //33 only seconds
+document.write("<br>")
+document.write(x.getUTCMonth()); //9
+
+
+//Js sunday ko 0 se start karta hain aur saturday ko 6 se end karta hai
+
+// week name print karna rahega to pahle week name ko array m store karenge aur then ifelse/switch se day name ko day no se print klarenge
+
+
+//jaise hamare pass get elementth waise hmare pass set krne ka v function h
+
+//chnage karne ke liye hamare pass set function h
+// hum set to parameter pss kr k v kr sakte H
+//but if we need to set one element
+//change karne k liye hamare pass set function ata h
+
+let m = new Date("October 13, 2018 11: 12: 33");
+let v = String(m.getFullYear()) + " " + String(m.getMonth()) + " " + String(m.getDate());
+console.log(v); //2018 9 13
+
+
+let x = new Date("October 13, 2018 11: 12: 33");
+x.setFullYear(2020);//hame pahle set karna hoga
+console.log(x.getFullYear()); //2020
+console.log(x); //Tue Oct 13 2020 11:12:33 GMT+0530 (India Standard Time) //direct console m set nahi kar sakte hn
+x.setMonth(2); //2: month
+console.log(x); //Fri Mar 13 2020 11:12:33 GMT+0530 (India Standard Time)
+x.setDate(20);
+console.log(x); //Fri Mar 20 2020 11:12:33 GMT+0530 (India Standard Time)
+x.setHours(13);
+console.log(x); //Fri Mar 20 2020 13:12:33 GMT+0530 (India Standard Time)
+x.setSeconds(2)
+console.log(x); //Fri Mar 20 2020 13:12:02 GMT+0530 (India Standard Time)
+x.setMinutes(61);
+console.log(x); //Fri Mar 20 2020 14:01:02 GMT+0530 (India Standard Time)
+*/
