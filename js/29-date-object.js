@@ -97,4 +97,44 @@ x.setSeconds(2)
 console.log(x); //Fri Mar 20 2020 13:12:02 GMT+0530 (India Standard Time)
 x.setMinutes(61);
 console.log(x); //Fri Mar 20 2020 14:01:02 GMT+0530 (India Standard Time)
+
+//suppose if we want to know ek particular date se 50 din bad kaun sa date hoga
+let x = new Date("October 13, 2018 11: 12: 33");
+x.setDate(x.getDate() + 50); //getDate()+50 se  uppar wale date m 50 din add kar diya gaya h
+console.log(x); //Sun Dec 02 2018 11:12:33 GMT+0530 (India Standard Time)
+
+
+
+let x = new Date("October 13, 2018 11: 12: 33");
+// console.log(x.getDay()); //6=sat
+let y = x;
+console.log(x); //Sat Oct 13 2018 11:12:33 GMT+0530 (India Standard Time)
+y.setDate(x.getDate() + 50); //as y=x, so changing y will change x too
+console.log(x); //Sun Dec 02 2018 11: 12: 33 GMT + 0530(India Standard Time)
+console.log(y); //Sun Dec 02 2018 11: 12: 33 GMT + 0530(India Standard Time)
+
+
+//now if we want to manipulate date
+let x = new Date("October 13, 2018 11: 12: 33");
+let y = new Date("October 13, 2018 11: 12: 33");
+
+y.setDate(x.getDate() + 50);
+console.log(x); // Oct 13 2018 11: 12: 33 GMT + 0530(India Standard Time)
+console.log(y); //Sun Dec 02 2018 11: 12: 33 GMT + 0530(India Standard Time)
+
+
+//how to compare date
+let x = new Date("October 11, 2023 11: 12: 33");
+let y = new Date(); //current adte
+if (y > x) {
+    console.log("x is past date");
+}
+else if (x > y) {
+    console.log("x is future date"); //✔
+}
+else {
+    console.log("x same as y");
+}
 */
+
+//jb jb date/time store manipulate karne ki baat aaye to date object use karna

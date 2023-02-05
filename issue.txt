@@ -1,2 +1,6 @@
 variable print ${age} is not working in js/11-alert-prompt-confirm.js is not working as we have to use `` rather than ''.
 ``: esc k niche ka keyword
+
+
+line no 112 29 date object is not understable s y=x;
+so changing y will how assigned in x
