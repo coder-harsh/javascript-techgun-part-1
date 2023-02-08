@@ -1,6 +1,15 @@
-variable print ${age} is not working in js/11-alert-prompt-confirm.js is not working as we have to use `` rather than ''.
+variable print ${age} is not working in js/11-alert-prompt-confirm.js as we have to use `` rather than ''.
 ``: esc k niche ka keyword
 
 
 line no 112 29 date object is not understable s y=x;
 so changing y will how assigned in x
+
+
+in hoisting
+x = 7;
+console.log(x);  //Uncaught ReferenceError: Cannot access 'x' before initialization
+let x;
+
+
+//yahan jb js let x ko uppar le jayega then uske bad use x=7 milega so js should print 7 but it gives error.
