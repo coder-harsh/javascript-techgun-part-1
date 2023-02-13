@@ -13,3 +13,4 @@ let x;
 
 
 //yahan jb js let x ko uppar le jayega then uske bad use x=7 milega so js should print 7 but it gives error.
+end of js part 1
